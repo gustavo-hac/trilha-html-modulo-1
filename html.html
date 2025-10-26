@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estrutura básica de um HTML.</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b63ce;--muted:#556;}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--muted)}
+    header{background:linear-gradient(90deg,var(--accent),#3da6fce8);color:white;padding:2rem 1rem}
+    .container{max-width:900px;margin: -32px auto 48px; padding:1rem}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.06);padding:1.4rem;margin-bottom:1rem}
+    h1{margin:0}
+    h2{margin-top:0.6rem}
+    p{margin:0.6rem 0}
+    .timeline{display:grid;gap:.6rem}
+    .event{border-left:3px solid #e6eefc;padding:0.6rem 0 0.6rem 1rem}
+    .event strong{display:block;color:var(--accent)}
+    @media (max-width:520px){header{padding:1.2rem} .container{padding:0.6rem}}
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: center; position: relative;">
+    <a href="index.html" style="position: absolute; left: 1rem; font-size: 1.6rem;">Página Inicial</a>
+    <h1 style="margin: 0;">Estrutura básica de um HTML.</h1>
+  </header>
+
+  <main class="container">
+  <section class="card">
+    <h2>Introdução</h2>
+    <p>Um documento HTML (HyperText Markup Language) é a base de qualquer página web. Ele define a estrutura e o conteúdo que os navegadores interpretam e exibem para os usuários.</p>
+  </section>
+
+  <section class="card">
+    <h2>Estrutura Básica de um Documento HTML</h2>
+    <p>Todo arquivo HTML segue uma organização padronizada, composta por elementos essenciais que indicam o início, o conteúdo e o encerramento da página. Abaixo está o modelo básico:</p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Meu Primeiro HTML&lt;/h1&gt;
+    &lt;p&gt;Este é um exemplo de parágrafo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>Explicação dos Principais Elementos</h2>
+    <ul>
+      <li><strong>&lt;!DOCTYPE html&gt;:</strong> Indica ao navegador que o documento segue o padrão HTML5.</li>
+      <li><strong>&lt;html&gt;:</strong> Elemento raiz que contém todo o conteúdo da página.</li>
+      <li><strong>&lt;head&gt;:</strong> Contém metadados, título e links para estilos e scripts.</li>
+      <li><strong>&lt;body&gt;:</strong> Contém todo o conteúdo visível da página, como textos, imagens e botões.</li>
+    </ul>
+  </section>
+
+  </main>
+</body>
+</html>
