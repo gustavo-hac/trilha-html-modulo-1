@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O que são Servers?</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b63ce;--muted:#556;}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--muted)}
+    header{background:linear-gradient(90deg,var(--accent),#3da6fce8);color:white;padding:2rem 1rem}
+    .container{max-width:900px;margin: -32px auto 48px; padding:1rem}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.06);padding:1.4rem;margin-bottom:1rem}
+    h1{margin:0}
+    h2{margin-top:0.6rem}
+    p{margin:0.6rem 0}
+    .timeline{display:grid;gap:.6rem}
+    .event{border-left:3px solid #e6eefc;padding:0.6rem 0 0.6rem 1rem}
+    .event strong{display:block;color:var(--accent)}
+    @media (max-width:520px){header{padding:1.2rem} .container{padding:0.6rem}}
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: center; position: relative;">
+    <a href="index.html" style="position: absolute; left: 1rem; font-size: 1.6rem;">Página Inicial</a>
+    <h1 style="margin: 0;">O que são Servers?</h1>
+  </header>
+
+  <main class="container">
+  <section class="card">
+    <h2>Introdução</h2>
+      <p>Em computação, um <strong>servidor</strong> (ou <em>server</em>) é um sistema — físico ou virtual — responsável por fornecer serviços, recursos ou dados para outros dispositivos ou programas chamados <strong>clientes</strong>. Essa interação é o fundamento da arquitetura cliente-servidor, que sustenta praticamente toda a internet moderna.</p>
+  </section>
+
+
+  <section class="card">
+    <h2>O que é um Servidor?</h2>
+      <p>Um servidor é configurado para <strong>receber, processar e responder</strong> a solicitações feitas por clientes. Ele pode estar hospedado em um data center, na nuvem ou até em uma rede local, e normalmente permanece ativo continuamente para garantir disponibilidade dos serviços.</p>
+      <p>O termo também pode se referir tanto ao <em>hardware</em> (a máquina física) quanto ao <em>software</em> que executa funções de atendimento, como servidores web, de e-mail ou de arquivos.</p>
+  </section>
+
+
+  <section class="card">
+    <h2>Principais Tipos de Servidores</h2>
+      <ul>
+        <li><strong>Servidor Web:</strong> armazena e entrega páginas da web via HTTP/HTTPS (ex: Apache, Nginx).</li>
+        <li><strong>Servidor de Arquivos:</strong> gerencia e compartilha documentos entre usuários em uma rede (ex: Samba, Windows Server).</li>
+        <li><strong>Servidor de E-mail:</strong> envia e recebe mensagens eletrônicas (ex: Postfix, Microsoft Exchange).</li>
+        <li><strong>Servidor de Banco de Dados:</strong> armazena, organiza e fornece acesso rápido a dados (ex: MySQL, PostgreSQL).</li>
+        <li><strong>Servidor de Aplicações:</strong> executa lógicas de negócio e fornece APIs para aplicativos clientes (ex: Node.js, Tomcat).</li>
+        <li><strong>Servidor DNS:</strong> traduz nomes de domínio em endereços IP, permitindo que navegadores encontrem sites na internet.</li>
+      </ul>
+  </section>
+
+
+  <section class="card">
+    <h2>Como Funciona um Servidor</h2>
+      <ol>
+        <li>O cliente envia uma solicitação (por exemplo, um navegador requisitando uma página).</li>
+        <li>O servidor recebe e interpreta essa solicitação.</li>
+        <li>O servidor processa os dados ou executa ações necessárias.</li>
+        <li>O servidor envia uma resposta ao cliente, como um documento, arquivo ou resultado de consulta.</li>
+      </ol>
+      <p>Esse processo ocorre em milissegundos e se repete constantemente para milhões de requisições simultâneas em servidores modernos.</p>
+  </section>
+
+  <section class="card">
+    <h2>Servidores Físicos e Virtuais</h2>
+      <p>Os servidores físicos são máquinas dedicadas exclusivamente a fornecer serviços de rede. Já os servidores virtuais são instâncias criadas dentro de um mesmo hardware físico por meio de tecnologias de virtualização ou contêineres, permitindo melhor aproveitamento de recursos.</p>
+      <p>Com o avanço da computação em nuvem, tornou-se comum contratar servidores virtuais escaláveis sob demanda, eliminando a necessidade de manter infraestrutura local.</p>
+  </section>
+
+  </main>
+</body>
+</html>
