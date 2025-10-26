@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>História dos Computadores</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b63ce;--muted:#556;}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--muted)}
+    header{background:linear-gradient(90deg,var(--accent),#3da6fce8);color:white;padding:2rem 1rem}
+    .container{max-width:900px;margin: -32px auto 48px; padding:1rem}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.06);padding:1.4rem;margin-bottom:1rem}
+    h1{margin:0}
+    h2{margin-top:0.6rem}
+    p{margin:0.6rem 0}
+    .timeline{display:grid;gap:.6rem}
+    .event{border-left:3px solid #e6eefc;padding:0.6rem 0 0.6rem 1rem}
+    .event strong{display:block;color:var(--accent)}
+    @media (max-width:520px){header{padding:1.2rem} .container{padding:0.6rem}}
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: center; position: relative;">
+    <a href="index.html" style="position: absolute; left: 1rem; font-size: 1.6rem;">Página Inicial</a>
+    <h1 style="margin: 0;">História dos Computadores</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Introdução</h2>
+      <p>O desenvolvimento dos computadores é resultado de séculos de invenções matemáticas, eletrônicas e mecânicas. Resultando nos computadores pessoais e nos sistemas em nuvem que conhecemos hoje.</p>
+
+      <h2>Linha do tempo</h2>
+      <div class="timeline">
+        <div class="event">
+          <strong>1801 — Tear de Jacquard</strong>
+          <p>Usou cartões perfurados para controlar padrões — ideia-chave para armazenamento e controle de programas.</p>
+        </div>
+
+        <div class="event">
+          <strong>1837 — Máquina analítica de Charles Babbage</strong>
+          <p>Projeto de computador mecânico programável (não concluído na época). Ada Lovelace escreveu notas que anteciparam o conceito de software.</p>
+        </div>
+
+        <div class="event">
+          <strong>1930s–1940s — Primeiros computadores eletrônicos</strong>
+          <p>Máquinas como o Colossus e o ENIAC para processar dados rapidamente e foram essenciais durante a Segunda Guerra Mundial.</p>
+        </div>
+
+        <div class="event">
+          <strong>1947 — Transístor</strong>
+          <p>Inventado por Bardeen, Brattain e Shockley tornando os computadores menores, mais rápidos e mais confiáveis.</p>
+        </div>
+
+        <div class="event">
+          <strong>1950s–1960s — Linguagens e sistemas operacionais</strong>
+          <p>Surgem linguagens de alto nível (Fortran, COBOL) e conceitos iniciais de sistemas operacionais e compartilhamento de tempo.</p>
+        </div>
+
+        <div class="event">
+          <strong>1970s — Microprocessador e computadores pessoais</strong>
+          <p>O microprocessador integrou a CPU em um único chip; empresas como Apple, IBM e Microsoft impulsionaram a computação pessoal.</p>
+        </div>
+
+        <div class="event">
+          <strong>Décadas de 1980–1990 — Popularização e redes</strong>
+          <p>PCs domésticos, interfaces gráficas e a expansão das redes culminaram na popularização da internet e do uso massivo de computadores.</p>
+        </div>
+
+        <div class="event">
+          <strong>2000s–presente — Mobilidade, nuvem e IA</strong>
+          <p>Computação móvel, serviços em nuvem, big data e avanços em inteligência artificial transformaram como armazenamos, processamos e extraímos valor dos dados.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
