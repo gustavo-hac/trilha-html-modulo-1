@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Listas ordenadas e não ordenadas.</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b63ce;--muted:#556;}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--muted)}
+    header{background:linear-gradient(90deg,var(--accent),#3da6fce8);color:white;padding:2rem 1rem}
+    .container{max-width:900px;margin: -32px auto 48px; padding:1rem}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.06);padding:1.4rem;margin-bottom:1rem}
+    h1{margin:0}
+    h2{margin-top:0.6rem}
+    p{margin:0.6rem 0}
+    .timeline{display:grid;gap:.6rem}
+    .event{border-left:3px solid #e6eefc;padding:0.6rem 0 0.6rem 1rem}
+    .event strong{display:block;color:var(--accent)}
+    @media (max-width:520px){header{padding:1.2rem} .container{padding:0.6rem}}
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: center; position: relative;">
+    <a href="index.html" style="position: absolute; left: 1rem; font-size: 1.6rem;">Página Inicial</a>
+    <h1 style="margin: 0;">Listas ordenadas e não ordenadas.</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Introdução</h2>
+      <p>No HTML, as listas são usadas para organizar informações de forma estruturada. Existem dois tipos principais de listas: <strong>ordenadas</strong> e <strong>não ordenadas</strong>. Cada uma possui uma função específica e um modo de exibição diferente nos navegadores.</p>
+    </section>
+
+    <section class="card">
+      <h2>Lista Ordenada (&lt;ol&gt;)</h2>
+      <p>A lista ordenada apresenta os itens em uma sequência numerada. É usada quando a <strong>ordem dos elementos importa</strong>, como em instruções passo a passo ou classificações.</p>
+      <p><strong>Exemplo:</strong></p>
+      <pre><code>&lt;ol&gt;
+        &lt;li&gt;Ligar o computador&lt;/li&gt;
+        &lt;li&gt;Abrir o navegador&lt;/li&gt;
+        &lt;li&gt;Acessar o site desejado&lt;/li&gt;
+        &lt;/ol&gt;
+      </code></pre>
+      <p><strong>Resultado:</strong></p>
+      <ol>
+        <li>Ligar o computador</li>
+        <li>Abrir o navegador</li>
+        <li>Acessar o site desejado</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Lista Não Ordenada (&lt;ul&gt;)</h2>
+      <p>A lista não ordenada exibe os itens com marcadores (geralmente pontos) e é usada quando a <strong>ordem dos elementos não é relevante</strong>, como em listas de compras, recursos ou tópicos gerais.</p>
+      <p><strong>Exemplo:</strong></p>
+      <pre><code>&lt;ul&gt;
+        &lt;li&gt;Teclado&lt;/li&gt;
+        &lt;li&gt;Mouse&lt;/li&gt;
+        &lt;li&gt;Monitor&lt;/li&gt;
+        &lt;/ul&gt;
+      </code></pre>
+      <p><strong>Resultado:</strong></p>
+      <ul>
+        <li>Teclado</li>
+        <li>Mouse</li>
+        <li>Monitor</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Principais Diferenças</h2>
+      <ul>
+        <li><strong>Ordenadas (&lt;ol&gt;):</strong> usam números ou letras para indicar sequência.</li>
+        <li><strong>Não ordenadas (&lt;ul&gt;):</strong> usam símbolos como pontos ou círculos.</li>
+        <li><strong>Uso:</strong> listas ordenadas servem para etapas ou hierarquias; listas não ordenadas servem para agrupamentos sem ordem específica.</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
