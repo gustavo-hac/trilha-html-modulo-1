@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O que são Clients?</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b63ce;--muted:#556;}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--muted)}
+    header{background:linear-gradient(90deg,var(--accent),#3da6fce8);color:white;padding:2rem 1rem}
+    .container{max-width:900px;margin: -32px auto 48px; padding:1rem}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.06);padding:1.4rem;margin-bottom:1rem}
+    h1{margin:0}
+    h2{margin-top:0.6rem}
+    p{margin:0.6rem 0}
+    .timeline{display:grid;gap:.6rem}
+    .event{border-left:3px solid #e6eefc;padding:0.6rem 0 0.6rem 1rem}
+    .event strong{display:block;color:var(--accent)}
+    @media (max-width:520px){header{padding:1.2rem} .container{padding:0.6rem}}
+  </style>
+</head>
+<body>
+  <header style="display: flex; align-items: center; justify-content: center; position: relative;">
+    <a href="index.html" style="position: absolute; left: 1rem; font-size: 1.6rem;">Página Inicial</a>
+    <h1 style="margin: 0;">O que são Clients?</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Introdução</h2>
+        <p>Em redes e sistemas computacionais, o termo <strong>client</strong> (ou cliente) designa qualquer dispositivo, software ou processo que solicita serviços ou recursos a um <strong>servidor</strong>. A comunicação entre clientes e servidores é a base da arquitetura cliente-servidor, amplamente utilizada na internet e em aplicações corporativas.</p>
+    </section>
+
+
+    <section class="card">
+      <h2>Conceito de Cliente</h2>
+        <p>O cliente é responsável por iniciar a comunicação. Ele envia uma <em>requisição</em> (request) ao servidor, que responde com os dados ou ações solicitadas. Essa interação pode ocorrer localmente (em uma rede interna) ou através da internet, usando protocolos como HTTP, FTP ou SMTP.</p>
+    </section>
+
+
+    <section class="card">
+      <h2>Exemplos Comuns de Clients</h2>
+        <ul>
+          <li><strong>Navegadores Web:</strong> como Chrome, Firefox e Edge, que enviam solicitações HTTP para servidores web e exibem as páginas recebidas.</li>
+          <li><strong>Aplicativos de E-mail:</strong> como Outlook e Thunderbird, que acessam servidores de e-mail via IMAP, POP3 e SMTP.</li>
+          <li><strong>Aplicativos móveis:</strong> que consomem APIs de servidores para exibir informações dinâmicas (como redes sociais e aplicativos de delivery).</li>
+          <li><strong>Clientes de banco de dados:</strong> programas que permitem ao usuário consultar e manipular dados armazenados em um servidor de banco de dados.</li>
+        </ul>
+    </section>
+
+
+    <section class="card">
+      <h2>Funcionamento da Comunicação Cliente-Servidor</h2>
+        <p>Na arquitetura cliente-servidor, o cliente envia uma solicitação (geralmente através de uma rede). O servidor processa essa solicitação e retorna uma resposta. Esse modelo garante uma separação clara entre quem <em>solicita</em> (cliente) e quem <em>fornece</em> (servidor), permitindo escalabilidade e manutenção mais simples dos sistemas.</p>
+        <p>Exemplo simplificado de fluxo de comunicação:</p>
+        <ol>
+          <li>O cliente envia uma requisição ao servidor (por exemplo, acessar uma página).</li>
+          <li>O servidor processa a requisição e localiza as informações solicitadas.</li>
+          <li>O servidor envia a resposta (por exemplo, o código HTML da página) ao cliente.</li>
+          <li>O cliente interpreta e exibe a resposta para o usuário.</li>
+        </ol>
+    </section>
+
+
+    <section class="card">
+      <h2>Tipos de Clientes</h2>
+        <ul>
+        <li><strong>Clientes leves (thin clients):</strong> dependem fortemente do servidor para processamento e armazenamento de dados.</li>
+        <li><strong>Clientes pesados (thick ou fat clients):</strong> realizam parte significativa do processamento localmente, conectando-se ao servidor apenas quando necessário.</li>
+        </ul>
+    </section>
+
+  </main>
+</body>
+</html>
